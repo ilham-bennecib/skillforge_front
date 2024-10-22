@@ -1,0 +1,84 @@
+/* Header.css */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between ;
+ 
+  height: 30%; /* Augmenter la hauteur du header */
+  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: rgba(35, 52, 73, 0.99);
+}
+.header-top{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  box-shadow: 5px 1px rgba(35, 52, 73, 0.2 );
+  height: 2.5rem;
+  width: 2.9rem;
+  margin-right: 10px ;
+  border: solid 0.2px rgba(35, 52, 73, 0.2 );
+}
+
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title {
+  padding-top: 5px;
+  font-size: 0.5rem;
+  font-weight: bold;
+ 
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(35, 52, 73, 0.99);
+  cursor: pointer;
+  font-weight: small;
+  font-size: 0.9rem;
+  padding: none;
+  margin-left: 5px;
+}
+
+.close-button:hover {
+  color: #f00;
+}
+.icone{
+width: 0.3rem;
+margin-left: 1px;
+
+}
+.deco{
+  margin-left: 30px;
+}
+.footer-container{
+  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
