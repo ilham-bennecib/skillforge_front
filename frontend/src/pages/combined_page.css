@@ -1,49 +1,100 @@
-/* CombinedPage.css */
+/* Mise en page pour la page combinée */
+.main-combined-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
 .combined-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    font-family: "Roboto", sans-serif;
-    color: rgba(35, 52, 73, 0.99);
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(35, 52, 73, 0.99);
+  width: 100%;
+  height: 100%;
+}
+.big-section{
+  margin: 5px;
+  width: 50%;
+  height: 90%;
+}
+/* Section pour chaque tableau */
+.section {
+  width: 100%; /* Les sections occupent chacune 45% de la largeur */
+  height: 100%;
+  background-color: #ffffff;
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+ 
+  overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+/* Titre des sections (candidats et étudiants) */
+.titre_section {
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #233449;
+}
+
+/* Tableau Bootstrap */
+.table {
+  font-size: 0.4rem; /* Ajustement de la taille de la police dans les tableaux */
   
-  .section {
-    width: 45%;
-    height: 100%;
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
+  margin-bottom: 0;
+}
+
+/* Apparence des lignes du tableau */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05); /* Couleur de fond pour les lignes impaires */
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Couleur de fond lors du survol */
+}
+
+
+/* personalisé la scroll barre*/
+/* Personnalisation de la barre de défilement pour les sections */
+.section::-webkit-scrollbar {
+  width: 10px; /* Largeur de la barre de défilement */
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: #007BFF; /* Couleur de la barre de défilement */
+  border-radius: 5px; /* Arrondir la barre de défilement */
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Couleur de l'arrière-plan de la piste */
+  border-radius: 5px; /* Arrondir la piste */
+}
+
+/* Pour les navigateurs qui ne prennent pas en charge les pseudo-éléments webkit */
+
+.section {
+  scrollbar-width:thin; /* Pour Firefox, réduit la largeur de la barre */
+  scrollbar-color: #5e807d #f1f1f1; /* Pour Firefox : couleur de la barre et de la piste */
+}
+.button-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.big-section .btn {
+  margin: 10px;
+  padding: 10px ;
+  font-size: 0.4rem;
   
-  .titre_section {
-    font-size: 0.5rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #233449;
-  }
-  
-  .list-group {
-    list-style: disc inside;
-    padding-left: 0;
-  }
-  
-  .list-group-item {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 0.4rem;
-    font-weight:light;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .separator {
-    border-left: 2px solid #ddd;
-    height: 100%;
-    margin: 0 20px;
-  }
-  
+  cursor: pointer;
+  background-color: #233449;
+  font-family: "Roboto", sans-serif;
+}
+

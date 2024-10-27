@@ -1,5 +1,6 @@
 #root {
- width: 80%;
+ width: 90%;
+ height: 100%;
   text-align: center;
   background-color: rgb(255, 255, 255);
   color:rgba(35, 52, 73, 0.99) ;
@@ -8,6 +9,7 @@
 .main{
  
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgb(249, 249, 249);
@@ -16,15 +18,14 @@
 .main-container{
   display: flex;
   flex-direction: row;
-  height: 45%;
+  height: 100%;
 
 
 }
 .footer-container{
   display: flex;
   flex-direction: row;
-  height: 20%;
-  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 10%;
+  
+  
 }

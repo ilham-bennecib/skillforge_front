@@ -1,8 +1,10 @@
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Candidats from './pages/candidats'
+import Students from './pages/students'
 import CombinedPage from './pages/combined_page'
-
+import ProfileCandidat from './pages/profile_candidat'
+import ProfileStudent from './pages/profile_student'
 
 import './App.css'
 import Header from './components/header'; // Importation du header
@@ -22,7 +24,10 @@ function App() {
     {/* Routes pour différentes pages */}
     <Routes>
         <Route path="/candidates/all" element={<Candidats /> } />
+        <Route path="/students/all" element={<Students /> } />
         <Route path="/combined" element={<CombinedPage />} />
+        <Route path="/candidat/profile/:id" element={<ProfileCandidat />} /> {/* Route vers le profil */}
+        <Route path="/student/profile/:id" element={<ProfileStudent />} /> {/* Route vers le profil */}
         
         </Routes>
       

@@ -1,0 +1,104 @@
+/* Mise en page pour la page du profil */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(35, 52, 73, 0.99);
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  /* Section du profil */
+  .section-profile {
+    width:100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Titre de la page */
+ .h2-profile {
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #233449;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 0.4rem;
+    font-weight: light;
+    text-align: center;
+   
+  }
+
+  
+  /* Informations personnelles */
+  .info-personnelle h2,
+  .info-documents h2 {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #233449;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-top: solid 0.5px black;
+    width: 80%;
+    text-align: center;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    color: #233449;
+  }
+  
+  /* Bouton de retour */
+  .retour-btn {
+    width: 30%;
+    height: 5%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px ;
+    font-size: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FFB83C;
+    color: #233449;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .retour-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Bouton d'ajout de document */
+  .btn-primary {
+    margin: 10px;
+    padding: 10px ;
+    font-size: 0.4rem;
+    cursor: pointer;
+    background-color: #233449;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  .icone-profile{
+    width: 0.7rem;
+    margin-right: 4px;
+  }
+  

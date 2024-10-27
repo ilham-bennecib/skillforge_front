@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between ;
  
-  height: 30%; /* Augmenter la hauteur du header */
-  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
+  height: 10%; /* Augmenter la hauteur du header */
+  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\skillforge_front\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
