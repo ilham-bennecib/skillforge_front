@@ -20,6 +20,14 @@ function Header() {
         return 'Tous les Étudiants';
       case '/combined':
         return 'Etudiants et Candidats';
+      case '/login/company':
+        return 'Espace de connexion Entreprise';
+      case '/login/student':
+        return 'Espace de connexion Etudiant';
+      case '/':
+        return 'Bienvenur sur SKILLFORGE'  ;
+      case '/login/employee':
+        return 'Espace de connexion Employé';  ;
       
       default:
         return 'SkillForge';
@@ -42,6 +50,7 @@ function Header() {
       </div>
       <div className="header-center">
         <p className="header-title">{getTitle(location.pathname)}</p>
+        
       </div>
     </header>
   );

@@ -1,0 +1,178 @@
+.homepage-container {
+  width: auto;
+  height: auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+  }
+  
+  .homepage-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .advantages{
+    padding : 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 5px 2px  rgba(35, 52, 73, 0.2 );
+  }
+
+  .advantage-item {
+    padding-top: 10px;
+    width : 20%;
+    height: 50%;
+    border-radius: 2px;
+    box-shadow: 1px 3px 2px  rgba(133, 136, 139, 0.2);
+  }
+
+  .advantage-item p {
+    padding: 5px;
+    font-size: 0.9em;
+    font-weight: light;
+  }
+  .img-fromation{
+    width : 100%
+  }
+  
+  .formations, .advantages, .contact {
+    margin-bottom: 40px;
+  }
+  
+  .advantages {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  
+
+  .details{
+    font-size: 1em;
+    
+  }
+
+  h2{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: light;
+    text-decoration: underline;
+
+  }
+  
+  .btn {
+    font-size: 0.9em;
+    background-color: rgba(168, 226, 196, 1);
+    border: none;
+    color: rgba(35, 52, 73, 1);
+    margin-bottom: 30px;
+  }
+
+  .btn:hover{
+   
+    background-color: rgb(161, 206, 214);
+    color: rgb(250, 250, 250);
+  }
+
+  .icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 3px solid rgba(30, 30, 30, 1);
+    padding : 20px
+  }
+
+  .icone-item {
+    width: 25%;
+  }
+
+  .img-icone{
+    width: 40%;
+  }
+
+  .p-icone{
+    text-align: left;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+  }
+
+  .p-contact{
+    width: 60%;
+    text-align: center;
+    font-weight: light ;
+    font-size: 1rem;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .block-contact{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact-options{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 4px 6px 5px  rgba(133, 136, 139, 0.2);
+  }
+
+  .contact-card {
+  width: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around center;
+   align-items: flex-start;
+  
+   margin: 10px;
+  }
+
+  .contact-card p{
+    width: 60%;
+    font-size: 1rem;
+    text-align:  center;
+ 
+  }
+
+  .round-img{
+    width: 45%;
+       
+    border-radius: 100%;
+  }
+
+  .link-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    border-top: 1px solid rgba(133, 136, 139, 0.2);
+  }
+  .checked{
+    margin: 10px 0px 0px 20px;
+    width: 1.5em;
+  }
+  .link-contact p{
+    padding: 5PX;
+    font-size: 0.8em;
+    margin: 5px 10px ;
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: rgba(0, 123, 64, 1);
+  }
+
+  .coll{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border : none;
+    margin : 10px;
+  }
+  

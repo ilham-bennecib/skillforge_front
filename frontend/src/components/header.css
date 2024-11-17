@@ -6,7 +6,7 @@
   justify-content: space-between ;
  
   height: 10%; /* Augmenter la hauteur du header */
-  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\skillforge_front\frontend\src\assets\public\img\LOGOSKILLFORGE.png');
+  background-image: url('C:\Users\ilham\Desktop\Projet Titre pro CDA\SkillForge\skillforge_front\frontend\src\assets\public\img\LOGOSKILLFORGE_copy.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -17,6 +17,7 @@
 .header-top{
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: row;
   justify-content: space-between;
 
@@ -25,12 +26,13 @@
 .header-left {
   display: flex;
   align-items: center;
+  height: auto;
 }
 
 .logo {
   box-shadow: 5px 1px rgba(35, 52, 73, 0.2 );
-  height: 2.5rem;
-  width: 2.9rem;
+  height: 100%;
+  width: 6em;
   margin-right: 10px ;
   border: solid 0.2px rgba(35, 52, 73, 0.2 );
 }
@@ -42,7 +44,7 @@
 
 .header-title {
   padding-top: 5px;
-  font-size: 0.5rem;
+  font-size: 1.5em;
   font-weight: bold;
  
   margin: 0;
@@ -57,7 +59,7 @@
 .close-button {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 3em;
   color: rgba(35, 52, 73, 0.99);
   cursor: pointer;
   font-weight: small;
@@ -70,7 +72,7 @@
   color: #f00;
 }
 .icone{
-width: 0.3rem;
+width: 1em;
 margin-left: 1px;
 
 }

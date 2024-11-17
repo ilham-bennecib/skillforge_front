@@ -6,6 +6,9 @@ import { useNavigate, useParams } from 'react-router-dom'; // Pour récupérer l
 import bio from '/src/assets/public/img/biometrics.png';
 import cake from '/src/assets/public/img/birthday-cake.png';
 import adress from '/src/assets/public/img/adress.png';
+import email from '/src/assets/public/img/contactmail.png';
+
+
 
 function ProfileCandidat() {
   const [user, setUser] = useState(null); // Stocker les données du profil
@@ -64,11 +67,11 @@ function ProfileCandidat() {
                  {user.address}
             </li>
             <li>
-                <img className='icone-profile' src={cake} alt="icone empreinte" />  
+                <img className='icone-profile' src={email} alt="icone empreinte" />  
                 {user.email}
             </li>
             <li>
-                <img className='icone-profile' src={cake} alt="icone empreinte" />
+                <img className='icone-profile' src={email} alt="icone empreinte" />
                  {user.phone}
             </li>
           </ul>

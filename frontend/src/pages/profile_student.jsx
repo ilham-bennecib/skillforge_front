@@ -6,6 +6,9 @@ import { useNavigate, useParams } from 'react-router-dom';
 import bio from '/src/assets/public/img/biometrics.png';
 import cake from '/src/assets/public/img/birthday-cake.png';
 import adress from '/src/assets/public/img/adress.png';
+import email from '/src/assets/public/img/contactmail.png';
+import buiding from '/src/assets/public/img/skyline.png';
+import presentation from '/src/assets/public/img/presentation.png';
 
 function StudentProfile() {
   const [student, setStudent] = useState(null); // Stocker les données de l'étudiant
@@ -56,19 +59,19 @@ function StudentProfile() {
                  {student.firstName} {student.lastName}
             </li>
             <li>
-                <img className='icone-profile' src={cake} alt="icone empreinte" />
+                <img className='icone-profile' src={cake} alt="icone gateau d'anniversaire" />
                  {formatDate(student.dateOfBirth)}
             </li>
             <li>
-                <img className='icone-profile' src={adress} alt="icone empreinte" />
+                <img className='icone-profile' src={adress} alt="icone adresse" />
                  {student.address}
             </li>
             <li>
-                <img className='icone-profile' src={cake} alt="icone empreinte" />  
+                <img className='icone-profile' src={email} alt="icone contact" />  
                 {student.email}
             </li>
             <li>
-                <img className='icone-profile' src={cake} alt="icone empreinte" />
+                <img className='icone-profile' src={email} alt="icone contact" />
                  {student.phone}
             </li>
           </ul>
@@ -78,9 +81,15 @@ function StudentProfile() {
         <div className="info-professionnelle">
           <h2>Informations Professionnelles</h2>
           <ul>
-            <li><strong>Entreprise suivie :</strong> {student.companyName}</li>
-            <li><strong>Formation :</strong> {student.formationName}</li>
-            <li><strong>Session :</strong> {student.sessionName}</li>
+            <li>
+            <img className='icone-profile' src={presentation} alt="icone contact" />
+            <strong>Formation :</strong> 
+            {student.structure_name}
+            </li>
+            <li>
+            <img className='icone-profile' src={buiding} alt="icone contact" />
+              <strong>Session :</strong> 
+              {student.session_name}</li>
           </ul>
         </div>
 

@@ -40,7 +40,7 @@
   
   /* Informations personnelles */
   .info-personnelle h2,
-  .info-documents h2 {
+  .info-documents h2, .info-professionnelle h2 {
     font-size: 0.5rem;
     font-weight: bold;
     color: #233449;
