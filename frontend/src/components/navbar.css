@@ -1,19 +1,18 @@
 /* navbar.css */
 .navbar-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .nav-link {
-    padding: 1px;
-    text-decoration: none;
-    color: rgba(35, 52, 73, 0.99);
-    font-weight: xx-small;
-    font-size: 0.6em;
-  }
-  
-  .nav-link:hover {
-    color: #007bff;
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  padding: 1px;
+  text-decoration: none;
+  color: rgba(35, 52, 73, 0.99);
+  font-weight: xx-small;
+  font-size: 0.6em;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}

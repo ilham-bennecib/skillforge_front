@@ -1,32 +1,24 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 import './combined_page.css'; // Import du fichier CSS
 import { useNavigate } from 'react-router-dom'; 
 
 function CombinedPage() {
   const [candidats, setCandidats] = useState([]);
   const [students, setStudents] = useState([]);
-  const navigate = useNavigate(); // Hook pour redirection
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Récupération des candidats
-    axios.get('http://localhost:8000/api/candidates/all/')
-      .then((response) => {
-        setCandidats(response.data);
-      })
-      .catch((error) => {
-        console.error('Erreur lors de la récupération des candidats:', error);
-      });
+    api.get('/candidates/all/')
+      .then((response) => setCandidats(response.data))
+      .catch((error) => console.error('Erreur lors de la récupération des candidats:', error));
 
     // Récupération des étudiants
-    axios.get('http://localhost:8000/api/students/all/')
-      .then((response) => {
-        setStudents(response.data);
-      })
-      .catch((error) => {
-        console.error('Erreur lors de la récupération des étudiants:', error);
-      });
+    api.get('/students/all/')
+      .then((response) => setStudents(response.data))
+      .catch((error) => console.error('Erreur lors de la récupération des étudiants:', error));
   }, []);
 
   return (
